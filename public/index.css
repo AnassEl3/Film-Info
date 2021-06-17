@@ -1,0 +1,236 @@
+body{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 500px;
+    font-family: raleway-light;
+}
+
+header{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: raleway-extrabold;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+header h2{
+    margin: 0;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+
+.search{
+    background-color: rgb(78, 78, 78);
+    color: white;
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+.search h2{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(128, 128, 128);
+    border-radius: 5px;
+}
+form{
+    margin: 20px 0;
+}
+form input{
+    border: none;
+    font-size: 15px;
+}
+form .submit{
+    font-family: raleway-bold;
+    cursor: pointer;
+}
+
+
+.msg{
+    font-size: 18px;
+    font-family: raleway-light;
+    text-align: center;
+    max-width: 450px;
+}
+
+
+.details{
+    position: fixed;
+    background-color: rgba(68, 68, 68, 0.37);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    z-index: 100;
+}
+.details .film_details{
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.details .close{
+    color: white;
+    text-align: right;
+    margin: 3px;
+    cursor: pointer;
+}
+.details .film_details .film_infos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.details .film_details .film_infos .img{
+    width: 250px;
+    margin: 0 5px;
+    text-align: center;
+}
+.details .film_details .film_infos img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.details .film_details .film_infos .infos{
+    width: 100%;
+    color: white;
+    padding: 5px;
+    
+}
+.details .film_details .film_infos .infos h2{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.details .film_details .film_infos .infos ul{
+    list-style: none;
+    font-family: raleway-light;
+    padding: 0;
+    margin: 15px 0;
+    
+}
+.details .film_details .film_infos .infos li{
+    padding: 5px;
+    margin: 2px 0;
+    background-color: rgb(97, 97, 97);
+}
+.details .film_details .film_desc{
+    background-color: rgb(9, 221, 236);
+}
+.details .film_details .imdb_link{
+    background-color: rgb(34, 103, 233);
+    text-align: center;
+    color: white;
+    padding: 5px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background-color .3s;
+}
+.details .film_details .imdb_link:hover{
+    background-color: rgb(61, 124, 240);
+    transition: background-color .3s;
+}
+
+
+
+.loading{
+    width: 70px;
+    background-color: rgba(167, 166, 166, 0.438);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+}
+.smale_loading{
+    position: absolute;
+    width: 50px;
+    margin: 10px 0;
+    
+}
+
+
+
+.list{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.film{
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-content: center;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+.film .img_box{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    border-radius: 10px 10px 0 0;
+}
+.film .img_box img{
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px 10px 0 0;
+    z-index: 2;
+}
+
+.film .info_box{
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 15px;
+}
+.film .info_box .title{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 18px;
+    color: white;
+    font-family: raleway-bold;
+}
+.film .info_box .year{
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: raleway-light;
+}
+.film .info_box .more_info{
+    background-color: rgb(34, 103, 233);
+    color: white;
+    padding: 5px 30px;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background-color .3s,padding .5s;
+}
+.film .info_box .more_info:hover{
+    background-color: rgb(61, 124, 240);
+    padding: 5px 35px;
+    transition: background-color .3s,padding .5s;
+}

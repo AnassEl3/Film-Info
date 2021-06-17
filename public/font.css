@@ -1,0 +1,24 @@
+@font-face{
+    font-family: anton;
+    src: url(../font/Anton/Anton-Regular.ttf);
+}
+@font-face{
+    font-family: raleway-light;
+    src: url(../font/Raleway/Raleway-Light.ttf);
+}
+@font-face{
+    font-family: raleway-medium;
+    src: url(../font/Raleway/Raleway-Medium.ttf);
+}
+@font-face{
+    font-family: raleway-bold;
+    src: url(../font/Raleway/Raleway-SemiBold.ttf);
+}
+@font-face{
+    font-family: raleway-extrabold;
+    src: url(../font/Raleway/Raleway-ExtraBold.ttf);
+}
+@font-face{
+    font-family: raleway-regular;
+    src: url(../font/Raleway/Raleway-Regular.ttf);
+}
